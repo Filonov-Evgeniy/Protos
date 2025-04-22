@@ -21,31 +21,21 @@ namespace WPF_Diplom_TEST
     /// </summary>
     public partial class MainWindow : Window
     {
-
         public MainWindow()
         {
             InitializeComponent();
-            MenuItem root = new MenuItem() { Title = "Menu" };
-            MenuItem childItem1 = new MenuItem() { Title = "Child item #1" };
-            childItem1.Items.Add(new MenuItem() { Title = "Child item #1.1" });
-            childItem1.Items.Add(new MenuItem() { Title = "Child item #1.2" });
-            root.Items.Add(childItem1);
-            root.Items.Add(new MenuItem() { Title = "Child item #2" });
-            trvMenu.Items.Add(root);
-        }
-
-
+            trvMenu.Items.Add(Menu_Create());
     }
 
-    public class MenuItem
+        static public MenuItem Menu_Create()
     {
-        public MenuItem()
-        {
-            this.Items = new ObservableCollection<MenuItem>();
+            MenuItem root = new MenuItem() { Title = "Изделие" };
+            MenuItem childItem1 = new MenuItem() { Title = "СЕ 1" };
+            childItem1.Items.Add(new MenuItem() { Title = "Деталь 1" });
+            childItem1.Items.Add(new MenuItem() { Title = "Деталь 2" });
+            root.Items.Add(childItem1);
+            root.Items.Add(new MenuItem() { Title = "СЕ 2" });
+            return root;
         }
-
-        public string Title { get; set; }
-
-        public ObservableCollection<MenuItem> Items { get; set; }
     }
 }
