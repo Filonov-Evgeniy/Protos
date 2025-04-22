@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-D:\Diplom\proga\WPF_Diplom_TEST\obj\Debug\
+D:\Diplom\proga\WPF_Diplom_TEST\obj\Release\
 WPF_Diplom_TEST
 none
 false
-DEBUG;TRACE
+TRACE
 D:\Diplom\proga\WPF_Diplom_TEST\App.xaml
 1219584333
 

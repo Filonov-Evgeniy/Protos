@@ -25,10 +25,10 @@ namespace WPF_Diplom_TEST
         {
             InitializeComponent();
             trvMenu.Items.Add(Menu_Create());
-    }
+        }
 
         static public MenuItem Menu_Create()
-    {
+        {
             MenuItem root = new MenuItem() { Title = "Изделие" };
             MenuItem childItem1 = new MenuItem() { Title = "СЕ 1" };
             childItem1.Items.Add(new MenuItem() { Title = "Деталь 1" });
@@ -37,5 +37,5 @@ namespace WPF_Diplom_TEST
             root.Items.Add(new MenuItem() { Title = "СЕ 2" });
             return root;
         }
-    }
+    } 
 }
