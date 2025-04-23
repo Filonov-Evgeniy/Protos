@@ -17,6 +17,7 @@ namespace WPF_Diplom_TEST
             root.Items.Add(childItem1);
             root.Items.Add(new MenuItem() { Title = "СЕ 2" });
             root.Items.Add(new MenuItem() { Title = "Мамут Рахал" });
+            root.Items.Add(new MenuItem() { Title = "Сынша Лавы" });
             return root;
         }
     }
