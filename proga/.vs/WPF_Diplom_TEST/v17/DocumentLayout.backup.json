@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\",
+  "WorkspaceRootPath": "D:\\Diplom\\proga\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\wpf_diplom_test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|d:\\diplom\\proga\\wpf_diplom_test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\wpf_diplom_test\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Diplom\\proga\\wpf_diplom_test\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|c:\\users\\shunk\\source\\repos\\wpf_diplom_test\\wpf_diplom_test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Diplom\\proga\\wpf_diplom_test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,39 +37,45 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\WPF_Diplom_TEST\\Item.cs",
+              "DocumentMoniker": "D:\\Diplom\\proga\\WPF_Diplom_TEST\\Item.cs",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\Item.cs",
-              "ToolTip": "C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\WPF_Diplom_TEST\\Item.cs",
+              "ToolTip": "D:\\Diplom\\proga\\WPF_Diplom_TEST\\Item.cs",
               "RelativeToolTip": "WPF_Diplom_TEST\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T09:17:06.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T09:17:06.84Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\WPF_Diplom_TEST\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\Diplom\\proga\\WPF_Diplom_TEST\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\WPF_Diplom_TEST\\MainWindow.xaml",
+              "ToolTip": "D:\\Diplom\\proga\\WPF_Diplom_TEST\\MainWindow.xaml",
               "RelativeToolTip": "WPF_Diplom_TEST\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-21T09:13:51.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T09:13:51.921Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\WPF_Diplom_TEST\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Diplom\\proga\\WPF_Diplom_TEST\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\shunk\\source\\repos\\WPF_Diplom_TEST\\WPF_Diplom_TEST\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Diplom\\proga\\WPF_Diplom_TEST\\MainWindow.xaml.cs",
               "RelativeToolTip": "WPF_Diplom_TEST\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T09:13:50.837Z",
               "EditorCaption": ""
