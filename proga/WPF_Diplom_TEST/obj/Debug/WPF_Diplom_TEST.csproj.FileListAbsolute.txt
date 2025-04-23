@@ -13,6 +13,7 @@ C:\Users\shunk\source\repos\WPF_Diplom_TEST\WPF_Diplom_TEST\obj\Debug\WPF_Diplom
 C:\Users\shunk\source\repos\WPF_Diplom_TEST\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.csproj.CoreCompileInputs.cache
 C:\Users\shunk\source\repos\WPF_Diplom_TEST\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.exe
 C:\Users\shunk\source\repos\WPF_Diplom_TEST\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.pdb
+<<<<<<< HEAD
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.csproj.AssemblyReference.cache
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\MainWindow.g.cs
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\App.g.cs
@@ -28,3 +29,20 @@ D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.g.resources
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.Properties.Resources.resources
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.csproj.GenerateResource.cache
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.csproj.CoreCompileInputs.cache
+=======
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\bin\Debug\WPF_Diplom_TEST.exe.config
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\bin\Debug\WPF_Diplom_TEST.exe
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\bin\Debug\WPF_Diplom_TEST.pdb
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.csproj.AssemblyReference.cache
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\MainWindow.g.cs
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\App.g.cs
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST_MarkupCompile.cache
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST_MarkupCompile.lref
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\MainWindow.baml
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.g.resources
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.Properties.Resources.resources
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.csproj.GenerateResource.cache
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.csproj.CoreCompileInputs.cache
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.exe
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.pdb
+>>>>>>> 6a6143669ccafc9d4bff471f7f297fdf29dd0982
