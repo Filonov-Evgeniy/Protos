@@ -4,17 +4,28 @@
 winexe
 C#
 .cs
-D:\Diplom\proga\WPF_Diplom_TEST\obj\Debug\
+<<<<<<< HEAD
+D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\
+=======
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\
+>>>>>>> 6a6143669ccafc9d4bff471f7f297fdf29dd0982
 WPF_Diplom_TEST
 none
 false
 DEBUG;TRACE
-D:\Diplom\proga\WPF_Diplom_TEST\App.xaml
+<<<<<<< HEAD
+D:\Protos\proga\WPF_Diplom_TEST\App.xaml
 1219584333
 
-7-995622918
+9-502787381
+=======
+C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\App.xaml
+1219584333
+
+8938437052
+>>>>>>> 6a6143669ccafc9d4bff471f7f297fdf29dd0982
 13-1310406943
 MainWindow.xaml;
 
-True
+False
 
