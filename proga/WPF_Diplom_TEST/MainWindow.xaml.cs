@@ -26,7 +26,7 @@ namespace WPF_Diplom_TEST
 
         static public MenuItem Menu_Create()
         {
-            TreeMenu menu = new TreeMenu();
+            TreeMenu menu = new TreeMenu(1);
             MenuItem item = menu.createMenu();
             return item;
         }
