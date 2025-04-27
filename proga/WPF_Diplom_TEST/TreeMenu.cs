@@ -20,43 +20,20 @@ namespace WPF_Diplom_TEST
             }
 
             return root;
-
-            //MenuItem root = new MenuItem() { Title = "Изделие" };
-            //MenuItem childItem1 = new MenuItem() { Title = "СЕ 1" };
-            //childItem1.Items.Add(new MenuItem() { Title = "Деталь 1" });
-            //childItem1.Items.Add(new MenuItem() { Title = "Деталь 2" });
-            //root.Items.Add(childItem1);
-            //root.Items.Add(new MenuItem() { Title = "СЕ 2" });
-            //root.Items.Add(new MenuItem() { Title = "Мамут Рахал" });
-            //root.Items.Add(new MenuItem() { Title = "Сынша Лавы" });
-            //return root;
         }
-
-        //private void openTree(int productId)
-        //{
-        //    MenuItem root = new MenuItem() { Title = getProductName(productId) };
-        //    if (isHasChildren(productId))
-        //    {
-        //        buildMenuItems(productId, ref root);
-        //    }
-
-        //    return root;
-        //}
 
         private void buildMenuItems(int productId, ref MenuItem item)
         {
             string query = $"select [Child_product_id] from [Product_Link] where [Parent_product_id] = '{productId}'";
             SqlCommand command = new SqlCommand(query, connect.GetConn());
-            SqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
+            var productIdList = sqlToInt(command);
+            foreach (int id in productIdList)
             {
-                int name = reader.GetInt32(0);
-                reader.Close();
-                MenuItem doughterItem = new MenuItem() { Title = getProductName(Convert.ToInt32(name)) };
+                MenuItem doughterItem = new MenuItem() { Title = getProductName(id) };
                 item.Items.Add(doughterItem);
-                if (isHasChildren(Convert.ToInt32(name)))
+                if (isHasChildren(id))
                 {
-                    buildMenuItems(Convert.ToInt32(name), ref doughterItem);
+                    buildMenuItems(id, ref doughterItem);
                 }
             }
         }
@@ -86,15 +63,22 @@ namespace WPF_Diplom_TEST
             return name;
         }
 
+        private List<int> sqlToInt(SqlCommand command)
+        {
+            List<int> dbRows = new List<int>();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                dbRows.Add(reader.GetInt32(0));
+            }
+            reader.Close();
+            return dbRows;
+        }
+
         public TreeMenu(int productId)
         {
             connect.OpenConn();
             this.productId = productId;
-        }
-
-        ~TreeMenu()
-        {
-            connect.CloseConn();
         }
     }
 }
