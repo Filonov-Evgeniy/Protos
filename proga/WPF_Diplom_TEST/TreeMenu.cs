@@ -24,16 +24,19 @@ namespace WPF_Diplom_TEST
 
         private void buildMenuItems(int productId, ref MenuItem item)
         {
-            string query = $"select [Child_product_id] from [Product_Link] where [Parent_product_id] = '{productId}'";
+            string query = $"select [Child_product_id], [Amount] from [Product_Link] where [Parent_product_id] = '{productId}'";
             SqlCommand command = new SqlCommand(query, connect.GetConn());
             var productIdList = sqlToInt(command);
-            foreach (int id in productIdList)
+            foreach (KeyValuePair<int, int> id in productIdList)
             {
-                MenuItem doughterItem = new MenuItem() { Title = getProductName(id) };
-                item.Items.Add(doughterItem);
-                if (isHasChildren(id))
+                for (int i = 0; i < id.Value; i++)
                 {
-                    buildMenuItems(id, ref doughterItem);
+                    MenuItem doughterItem = new MenuItem() { Title = getProductName(id.Key) };
+                    item.Items.Add(doughterItem);
+                    if (isHasChildren(id.Key))
+                    {
+                        buildMenuItems(id.Key, ref doughterItem);
+                    }
                 }
             }
         }
@@ -75,10 +78,16 @@ namespace WPF_Diplom_TEST
             return dbRows;
         }
 
-        public TreeMenu(int productId)
+        private Dictionary<int, int> sqlToInt(SqlCommand command)
         {
-            connect.OpenConn();
-            this.productId = productId;
+            Dictionary<int, int> dbRows = new Dictionary<int, int>();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                dbRows.Add(reader.GetInt32(0), reader.GetInt32(1));
+            }
+            reader.Close();
+            return dbRows;
         }
     }
 }
