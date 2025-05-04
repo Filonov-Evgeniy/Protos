@@ -11,19 +11,30 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="7*"/>
         </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TreeView Name="trvMenu" Width="Auto" Height="Auto" Grid.Row="0" >
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate DataType="{x:Type MenuItem}" ItemsSource="{Binding Items}">
+                        <TextBlock Text="{Binding Title}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+            <StackPanel  Grid.Row="1">
+                <Button x:Name="CopyTreeItemButton" Content="Копировать" Click="CopyTreeItemButton_Click"/>
+                <Button x:Name="InsertTreeItemButton" Content="Вставить" Click="InsertTreeItemButton_Click"/>
+                <Button x:Name="AddNewTreeItemButton" Content="Добавить элемент" Click="AddNewTreeItemButton_Click"/>
+                <Button x:Name="DeleteTreeItemButton" Content="Удалить элемент" Click="DeleteTreeItemButton_Click"/>
+            </StackPanel>
+        </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
         </Grid>
-        <TreeView Name="trvMenu" Width="150" Height="200" Grid.Column="0" >
-            <TreeView.ItemTemplate>
-                <HierarchicalDataTemplate DataType="{x:Type MenuItem}" ItemsSource="{Binding Items}">
-                    <TextBlock Text="{Binding Title}" />
-                </HierarchicalDataTemplate>
-            </TreeView.ItemTemplate>
-        </TreeView>
-        
     </Grid>
 </Window>

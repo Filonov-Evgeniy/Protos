@@ -46,3 +46,26 @@ C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_
 C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.exe
 C:\Users\shunk\source\repos\WPF_Diplom_TEST\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.pdb
 >>>>>>> 6a6143669ccafc9d4bff471f7f297fdf29dd0982
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Buffers.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.IO.Pipelines.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Memory.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Numerics.Vectors.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Text.Encodings.Web.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Text.Json.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.ValueTuple.dll
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Buffers.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.IO.Pipelines.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Memory.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Numerics.Vectors.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Text.Encodings.Web.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Text.Json.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.ValueTuple.xml
+D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Dipl.E701A631.Up2Date
+D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\ItemList.g.cs
+D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\ItemList.baml

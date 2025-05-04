@@ -4,13 +4,16 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace WPF_Diplom_TEST
 {
     class TreeMenu
     {
+        private static MenuItem elementToCopy;
         DBConnection connect = new DBConnection();
         int productId;
+
         public MenuItem createMenu()
         {
             MenuItem root = new MenuItem() { Title = getProductName(productId) };
@@ -19,6 +22,7 @@ namespace WPF_Diplom_TEST
                 buildMenuItems(productId, ref root);
             }
 
+            connect.CloseConn();
             return root;
         }
 
@@ -32,6 +36,8 @@ namespace WPF_Diplom_TEST
                 for (int i = 0; i < id.Value; i++)
                 {
                     MenuItem doughterItem = new MenuItem() { Title = getProductName(id.Key) };
+                    doughterItem.Parent = item;
+                    doughterItem.itemId = id.Key.ToString();
                     item.Items.Add(doughterItem);
                     if (isHasChildren(id.Key))
                     {
@@ -66,18 +72,6 @@ namespace WPF_Diplom_TEST
             return name;
         }
 
-        private List<int> sqlToInt(SqlCommand command)
-        {
-            List<int> dbRows = new List<int>();
-            SqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                dbRows.Add(reader.GetInt32(0));
-            }
-            reader.Close();
-            return dbRows;
-        }
-
         private Dictionary<int, int> sqlToInt(SqlCommand command)
         {
             Dictionary<int, int> dbRows = new Dictionary<int, int>();
@@ -88,6 +82,30 @@ namespace WPF_Diplom_TEST
             }
             reader.Close();
             return dbRows;
+        }
+
+        public static void copyMenuItem(MenuItem item)
+        {
+            elementToCopy = (MenuItem)item.Clone();
+        }
+
+        public static MenuItem InsertMenuItem()
+        {
+            if (elementToCopy == null)
+            {
+                MessageBox.Show("Не выбран элемент для вставки");
+                return null;
+            }
+            
+            MenuItem itemToInsert = (MenuItem)elementToCopy.Clone();
+            return itemToInsert;
+            
+        }
+
+        public TreeMenu(int productId)
+        {
+            this.productId = productId;
+            connect.OpenConn();
         }
     }
 }

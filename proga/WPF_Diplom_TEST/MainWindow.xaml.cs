@@ -18,6 +18,7 @@ namespace WPF_Diplom_TEST
 {
     public partial class MainWindow : Window
     {
+        List<MenuItem> itemsToAdd = new List<MenuItem>();
         public MainWindow()
         {
             InitializeComponent();
@@ -29,6 +30,50 @@ namespace WPF_Diplom_TEST
             TreeMenu menu = new TreeMenu(1);
             MenuItem item = menu.createMenu();
             return item;
+        }
+
+        private void CopyTreeItemButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedItem = trvMenu.SelectedItem as MenuItem;
+            TreeMenu.copyMenuItem(selectedItem);
+        }
+
+        private void InsertTreeItemButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedItem = trvMenu.SelectedItem as MenuItem;
+            var insertedItem = TreeMenu.InsertMenuItem();
+            if (insertedItem != null)
+            {
+                insertedItem.Parent = selectedItem;
+                selectedItem.Items.Add(insertedItem);
+            }
+        }
+
+        private void AddNewTreeItemButton_Click(object sender, RoutedEventArgs e)
+        {
+            ItemList list = new ItemList(itemsToAdd);
+            if (list.ShowDialog() == true)
+            {
+                var selectedItem = trvMenu.SelectedItem as MenuItem;
+                foreach (MenuItem item in itemsToAdd)
+                {
+                    selectedItem.Items.Add(item);
+                }
+                MessageBox.Show("Элементы добавлены");
+            }
+        }
+
+        private void DeleteTreeItemButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedItem = trvMenu.SelectedItem as MenuItem;
+            if (selectedItem == null)
+            {
+                MessageBox.Show("Не выбран элемент для удаления");
+            }
+            else
+            {
+                selectedItem.Parent.Items.Remove(selectedItem);
+            }
         }
     } 
 }
