@@ -14,7 +14,7 @@ CREATE TABLE [dbo].[Operation] (
     [description]    VARCHAR (MAX) NULL,
     PRIMARY KEY CLUSTERED ([id] ASC),
     FOREIGN KEY ([product_id]) REFERENCES [dbo].[Product] ([id]),
-    FOREIGN KEY ([code]) REFERENCES [dbo].[Operation_Type] ([id])
+    FOREIGN KEY ([type_id]) REFERENCES [dbo].[Operation_Type] ([id])
 );
 
 INSERT [dbo].[Operation_Type] ([id], [name], [description]) VALUES (-1, N'Default', N'')

@@ -20,7 +20,7 @@ namespace ProtosInterface
             }
             else
             {
-                textSize = 14 + (screenSize - 450) / 60;
+                textSize = Math.Round(14 + (screenSize - 450) / 75, 2);
             }
             return textSize;
         }

@@ -26,7 +26,7 @@ namespace ProtosInterface.Models
         [ForeignKey("ProductId")]
         public Product Product { get; set; }
 
-        [ForeignKey("Code")]
+        [ForeignKey("TypeId")]
         public Operation_Type OperationType { get; set; }
     }
 }

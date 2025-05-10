@@ -1,4 +1,5 @@
-﻿using ProtosInterface.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using ProtosInterface.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -104,6 +105,20 @@ namespace ProtosInterface
                     result += item.Title.ToString() + "\n";
                 if (item.Items.Count > 0)
                     result = MenuItemSearch(item, search, result);
+            }
+            return result;
+        }
+
+        public string ItemOperations(MenuItem item)
+        {
+            string result = "";
+            IQueryable operations = _context.Operations.Include(o => o.OperationType).Where(o => o.ProductId == item.itemId);
+            foreach (Operation operation in operations)
+            {
+                if (operation.OperationType != null)
+                {
+                    result += operation.OperationType.Name + "\n";
+                }
             }
             return result;
         }

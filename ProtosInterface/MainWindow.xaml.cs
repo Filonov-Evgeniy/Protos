@@ -115,8 +115,10 @@ public partial class MainWindow : Window
     {
         if (trvMenu.SelectedItem != null)
         {
-            var searchTreeViewItem = trvMenu.SelectedItem as MenuItem;
-            SearchTreeItem.Text = searchTreeViewItem.Items[1].Title;
+            OperationList.Items.Clear();
+            TreeMenu menu = new TreeMenu(11);
+            var selectedItem = trvMenu.SelectedItem as MenuItem;
+            OperationList.Items.Add(menu.ItemOperations(selectedItem));
         }
     }
 }

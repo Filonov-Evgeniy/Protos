@@ -21,6 +21,9 @@
         <Style TargetType="TextBox">
             <Setter Property="FontSize" Value="{Binding ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource ScreenSizeToTextSize}}"/>
         </Style>
+        <Style TargetType="ListBox">
+            <Setter Property="FontSize" Value="{Binding ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource ScreenSizeToTextSize}}"/>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -73,7 +76,7 @@
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <Border Grid.Row="0" Margin="5,5,5,5">
-
+                <ListBox x:Name="OperationList" Margin="5,5,5,5"/>
             </Border>
         </Grid>
     </Grid>
