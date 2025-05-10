@@ -5,36 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProtosInterface"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="Manual" Top="300" Left="500">
+    <Window.Resources>
+        <local:ScreenSizeToTextSize x:Key="ScreenSizeToTextSize"/>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="{Binding ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource ScreenSizeToTextSize}}"/>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="BorderBrush" Value="#FF464646"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="ScaledTextBlockStyle">
+            <Setter Property="FontSize" Value="{Binding ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource ScreenSizeToTextSize}}"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="{Binding ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource ScreenSizeToTextSize}}"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="7*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="2*"/>
-            </Grid.RowDefinitions>
-            <TreeView Name="trvMenu" Width="Auto" Height="Auto" Grid.Row="0" >
-                <TreeView.ItemTemplate>
-                    <HierarchicalDataTemplate DataType="{x:Type MenuItem}" ItemsSource="{Binding Items}">
-                        <TextBlock Text="{Binding Title}" />
-                    </HierarchicalDataTemplate>
-                </TreeView.ItemTemplate>
-            </TreeView>
-            <StackPanel  Grid.Row="1">
-                <Button x:Name="CopyTreeItemButton" Content="Копировать" Click="CopyTreeItemButton_Click"/>
-                <Button x:Name="InsertTreeItemButton" Content="Вставить" Click="InsertTreeItemButton_Click"/>
-                <Button x:Name="AddNewTreeItemButton" Content="Добавить элемент" Click="AddNewTreeItemButton_Click"/>
-                <Button x:Name="DeleteTreeItemButton" Content="Удалить элемент" Click="DeleteTreeItemButton_Click"/>
-            </StackPanel>
-        </Grid>
+        <Border BorderThickness="0,0,1,0">
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Margin="5,5,5,5">
+                    <TreeView Name="trvMenu">
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate DataType="{x:Type MenuItem}" ItemsSource="{Binding Items}">
+                                <TextBlock Text="{Binding Title}" Style="{StaticResource ScaledTextBlockStyle}"/>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+                </Border>
+                <Border Grid.Row="1" Margin="5,0,5,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="9*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="SearchPic" Source="Resources/Lupa.png" Grid.Column="0"/>
+                            <TextBox x:Name="SearchTreeItem" Text="Поиск" Foreground="Gray" GotFocus="SearchText_GotFocus" LostFocus="SearchText_LostFocus" TextChanged="SearchText_Changed" Grid.Column="1"/>
+                        </Grid>
+                        <Button x:Name="CopyTreeItemButton" Content="Копировать" Click="CopyTreeItemButton_Click" Grid.Row="1"/>
+                        <Button x:Name="InsertTreeItemButton" Content="Вставить" Click="InsertTreeItemButton_Click" Grid.Row="2"/>
+                        <Button x:Name="AddNewTreeItemButton" Content="Добавить элемент" Click="AddNewTreeItemButton_Click" Grid.Row="3"/>
+                        <Button x:Name="DeleteTreeItemButton" Content="Удалить элемент" Click="DeleteTreeItemButton_Click" Grid.Row="4"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
+            <Border Grid.Row="0" Margin="5,5,5,5">
+
+            </Border>
         </Grid>
     </Grid>
 </Window>

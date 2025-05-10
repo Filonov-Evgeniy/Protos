@@ -63,7 +63,7 @@ namespace ProtosInterface
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TestDB;Integrated Security=True;");
+            optionsBuilder.UseSqlServer(@"Data Source=KAYSER\MSSQLSERV;Initial Catalog=Тест;Integrated Security=True;TrustServerCertificate=true;");
         }
     }
 }

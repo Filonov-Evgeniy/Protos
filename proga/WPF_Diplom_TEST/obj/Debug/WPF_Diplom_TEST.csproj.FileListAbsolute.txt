@@ -69,3 +69,12 @@ D:\Protos\proga\WPF_Diplom_TEST\bin\Debug\System.ValueTuple.xml
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Dipl.E701A631.Up2Date
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\ItemList.g.cs
 D:\Protos\proga\WPF_Diplom_TEST\obj\Debug\ItemList.baml
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.csproj.AssemblyReference.cache
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\ItemList.g.cs
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\MainWindow.g.cs
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\App.g.cs
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST_MarkupCompile.cache
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST_MarkupCompile.lref
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.exe
+C:\Users\shunk\OneDrive\Документы\GitHub\Protos\proga\WPF_Diplom_TEST\obj\Debug\WPF_Diplom_TEST.pdb

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProtosInterface"
   ],
-  "SelectedNode": "\\WPF_Diplom_TEST.sln",
+  "SelectedNode": "\\ProtosInterface\\TreeMenu.cs",
   "PreviewInSolutionExplorer": false
 }
