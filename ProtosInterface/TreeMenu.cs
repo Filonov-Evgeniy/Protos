@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProtosInterface
 {
@@ -32,9 +33,9 @@ namespace ProtosInterface
             var productIdList = sqlToDictionary(products);
             foreach (KeyValuePair<int, double> id in productIdList)
             {
-                for (int i = 0; i < id.Value; i++)
-                {
-                    MenuItem doughterItem = new MenuItem() { Title = getProductName(id.Key) };
+                //for (int i = 0; i < id.Value; i++)
+                //{
+                    MenuItem doughterItem = new MenuItem() { Title = $"{getProductName(id.Key)}" };
                     doughterItem.Parent = item;
                     doughterItem.itemId = id.Key;
                     item.Items.Add(doughterItem);
@@ -42,7 +43,7 @@ namespace ProtosInterface
                     {
                         buildMenuItems(id.Key, ref doughterItem);
                     }
-                }
+                //}
             }
         }
 
@@ -93,6 +94,18 @@ namespace ProtosInterface
             MenuItem itemToInsert = (MenuItem)elementToCopy.Clone();
             return itemToInsert;
 
+        }
+
+        public static string MenuItemSearch(MenuItem root, string search, string result)
+        {
+            foreach (var item in root.Items)
+            {
+                if (item.Title.ToString().ToLower().Contains(search.ToLower()))
+                    result += item.Title.ToString() + "\n";
+                if (item.Items.Count > 0)
+                    result = MenuItemSearch(item, search, result);
+            }
+            return result;
         }
 
         public TreeMenu(int productId)

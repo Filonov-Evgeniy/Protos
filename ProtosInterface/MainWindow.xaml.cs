@@ -96,6 +96,27 @@ public partial class MainWindow : Window
 
     private void SearchText_Changed(object sender, TextChangedEventArgs e)
     {
-        
+        TextBox search = sender as TextBox;
+        if (search.Text.Length > 2)
+        {
+            try
+            {
+                var root = trvMenu.Items[0] as MenuItem;
+
+                string text = TreeMenu.MenuItemSearch(root, search.Text, "");
+
+                MessageBox.Show(text);
+            }
+            catch { }
+        }
+    }
+
+    private void trvMenu_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+    {
+        if (trvMenu.SelectedItem != null)
+        {
+            var searchTreeViewItem = trvMenu.SelectedItem as MenuItem;
+            SearchTreeItem.Text = searchTreeViewItem.Items[1].Title;
+        }
     }
 }

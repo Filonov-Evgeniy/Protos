@@ -34,7 +34,7 @@
                     <RowDefinition Height="3*"/>
                 </Grid.RowDefinitions>
                 <Border Grid.Row="0" Margin="5,5,5,5">
-                    <TreeView Name="trvMenu">
+                    <TreeView Name="trvMenu" SelectedItemChanged="trvMenu_SelectedItemChanged">
                         <TreeView.ItemTemplate>
                             <HierarchicalDataTemplate DataType="{x:Type MenuItem}" ItemsSource="{Binding Items}">
                                 <TextBlock Text="{Binding Title}" Style="{StaticResource ScaledTextBlockStyle}"/>
