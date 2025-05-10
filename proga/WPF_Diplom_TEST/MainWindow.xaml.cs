@@ -75,5 +75,25 @@ namespace WPF_Diplom_TEST
                 selectedItem.Parent.Items.Remove(selectedItem);
             }
         }
+
+        private void SearchText_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = SearchTreeItem;
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = "Поиск";
+                textBox.Foreground = Brushes.Gray;
+            }
+        }
+
+        private void SearchText_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = SearchTreeItem;
+            if (textBox.Text == "Поиск")
+            {
+                textBox.Text = "";
+                textBox.Foreground = Brushes.Black;
+            }
+        }
     } 
 }
