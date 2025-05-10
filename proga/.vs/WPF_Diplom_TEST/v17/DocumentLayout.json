@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "D:\\Protos\\proga\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\dbdataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\dbdataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\itemlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\itemlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\itemlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\itemlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\models\\product_link.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\models\\product_link.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\treemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\treemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,28 +43,8 @@
       "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\itemlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\itemlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\itemlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\itemlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|d:\\protos\\proga\\wpf_diplom_test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\dbdataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\dbdataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|D:\\Protos\\proga\\wpf_diplom_test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|d:\\protos\\proga\\wpf_diplom_test\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38C2F0B-0214-4EAF-A2F5-38B6BBF39D4D}|WPF_Diplom_TEST\\WPF_Diplom_TEST.csproj|solutionrelative:wpf_diplom_test\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,17 +54,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WPF_Diplom_TEST\\AppDbContext.cs",
+              "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\AppDbContext.cs",
+              "RelativeToolTip": "WPF_Diplom_TEST\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T10:51:34.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Product_Link.cs",
+              "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\Models\\Product_Link.cs",
+              "RelativeDocumentMoniker": "WPF_Diplom_TEST\\Models\\Product_Link.cs",
+              "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\Models\\Product_Link.cs",
+              "RelativeToolTip": "WPF_Diplom_TEST\\Models\\Product_Link.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T10:47:18.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "WPF_Diplom_TEST\\Models\\Product.cs",
+              "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\Models\\Product.cs",
+              "RelativeToolTip": "WPF_Diplom_TEST\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T10:43:15.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "dbDataLoader.cs",
               "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\dbDataLoader.cs",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\dbDataLoader.cs",
               "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\dbDataLoader.cs",
               "RelativeToolTip": "WPF_Diplom_TEST\\dbDataLoader.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADkAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowB0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T09:39:59.091Z",
               "EditorCaption": ""
@@ -71,72 +122,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ItemList.xaml.cs",
               "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\ItemList.xaml.cs",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\ItemList.xaml.cs",
               "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\ItemList.xaml.cs",
               "RelativeToolTip": "WPF_Diplom_TEST\\ItemList.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAWwCYAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T09:52:49.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DBConnection.cs",
               "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\DBConnection.cs",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\DBConnection.cs",
               "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\DBConnection.cs",
               "RelativeToolTip": "WPF_Diplom_TEST\\DBConnection.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T11:53:09.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "MenuItem.cs",
               "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\MenuItem.cs",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\MenuItem.cs",
               "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\MenuItem.cs",
               "RelativeToolTip": "WPF_Diplom_TEST\\MenuItem.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAuwCgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T13:10:44.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "TreeMenu.cs",
               "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\TreeMenu.cs",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\TreeMenu.cs",
               "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\TreeMenu.cs",
               "RelativeToolTip": "WPF_Diplom_TEST\\TreeMenu.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAIwFgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T11:28:05.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\MainWindow.xaml.cs",
               "ToolTip": "D:\\Protos\\proga\\WPF_Diplom_TEST\\MainWindow.xaml.cs",
               "RelativeToolTip": "WPF_Diplom_TEST\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAgwDcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T13:11:07.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Protos\\proga\\WPF_Diplom_TEST\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WPF_Diplom_TEST\\MainWindow.xaml",
