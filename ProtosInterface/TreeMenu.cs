@@ -118,10 +118,6 @@ namespace ProtosInterface
                 if (operation.OperationType != null)
                 {
                     result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
-                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
-                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
-                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
-                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
                 }
             }
             return result;

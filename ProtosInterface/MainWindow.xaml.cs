@@ -121,4 +121,95 @@ public partial class MainWindow : Window
             OperationList.DisplayMemberPath = "Title";
         }
     }
+
+    private void HighlightNextItem()
+    {
+        
+    }
+
+    //private void HighlightPreviousItem()
+    //{
+    //    TreeViewItem previousItem = GetPreviousTreeViewItem();
+
+    //    if (previousItem != null)
+    //    {
+    //        previousItem.IsSelected = true;
+    //        previousItem.Focus();
+    //    }
+
+    //}
+
+    private TreeViewItem GetNextTreeViewItem()
+    {
+        TreeViewItem selectedItem = ConvertToTreeViewItem((MenuItem)trvMenu.SelectedItem);
+        TreeViewItem nextItem = null;
+
+        if (selectedItem != null)
+        {
+            nextItem = GetNextTreeViewItem(selectedItem);
+        }
+
+        return nextItem;
+    }
+
+    private TreeViewItem GetNextTreeViewItem(TreeViewItem item)
+    {
+        TreeViewItem nextItem = null;
+        item.IsExpanded = true;
+        item.UpdateLayout();
+
+        if (item != null)
+        {
+            if (item.Items.Count > 0)
+            {
+                nextItem = (TreeViewItem)trvMenu.ItemContainerGenerator.ContainerFromIndex(0);
+            }
+            else
+            {
+                TreeViewItem parentItem = GetParentTreeViewItem(item);
+                if (parentItem != null)
+                {
+                    int index = parentItem.ItemContainerGenerator.IndexFromContainer(item);
+                    if (index < parentItem.Items.Count - 1)
+                    {
+                        nextItem = (TreeViewItem)parentItem.ItemContainerGenerator.ContainerFromIndex(index + 1);
+                    }
+                }
+            }
+        }
+
+        return nextItem;
+    }
+
+    private TreeViewItem GetParentTreeViewItem(TreeViewItem item)
+    {
+        return item?.Parent as TreeViewItem;
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        TreeViewItem nextItem = GetNextTreeViewItem();
+
+        if (nextItem != null)
+        {
+            nextItem.IsSelected = true;
+            nextItem.Focus();
+        }
+    }
+
+    private static TreeViewItem ConvertToTreeViewItem(MenuItem menuItem)
+    {
+        TreeViewItem treeViewItem = new TreeViewItem
+        {
+            Header = menuItem.Title,
+            Tag = menuItem,
+        };
+
+        foreach (MenuItem childItem in menuItem.Items)
+        {
+            treeViewItem.Items.Add(ConvertToTreeViewItem(childItem));
+        }
+
+        return treeViewItem;
+    }
 }
