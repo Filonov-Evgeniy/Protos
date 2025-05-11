@@ -8,13 +8,13 @@ C:\Users\shunk\OneDrive\Документы\GitHub\Protos\ProtosInterface\obj\Deb
 ProtosInterface
 none
 false
-TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\shunk\OneDrive\Документы\GitHub\Protos\ProtosInterface\App.xaml
 2346487613
 
-19814629520
-4581520841330
+151842039083
+229760420665
 ItemList.xaml;MainWindow.xaml;
 
-True
+False
 

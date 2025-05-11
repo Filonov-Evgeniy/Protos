@@ -109,15 +109,19 @@ namespace ProtosInterface
             return result;
         }
 
-        public string ItemOperations(MenuItem item)
+        public List<MenuItem> ItemOperations(MenuItem item)
         {
-            string result = "";
+            List<MenuItem> result = new List<MenuItem>();
             IQueryable operations = _context.Operations.Include(o => o.OperationType).Where(o => o.ProductId == item.itemId);
             foreach (Operation operation in operations)
             {
                 if (operation.OperationType != null)
                 {
-                    result += operation.OperationType.Name + "\n";
+                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
+                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
+                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
+                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
+                    result.Add(new MenuItem() { Title = operation.OperationType.Name + "\n" });
                 }
             }
             return result;

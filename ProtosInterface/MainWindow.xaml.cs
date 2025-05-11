@@ -97,7 +97,7 @@ public partial class MainWindow : Window
     private void SearchText_Changed(object sender, TextChangedEventArgs e)
     {
         TextBox search = sender as TextBox;
-        if (search.Text.Length > 2)
+        if (search.Text.Length > 2 && !search.Text.Contains("Поиск"))
         {
             try
             {
@@ -115,10 +115,10 @@ public partial class MainWindow : Window
     {
         if (trvMenu.SelectedItem != null)
         {
-            OperationList.Items.Clear();
             TreeMenu menu = new TreeMenu(11);
             var selectedItem = trvMenu.SelectedItem as MenuItem;
-            OperationList.Items.Add(menu.ItemOperations(selectedItem));
+            OperationList.ItemsSource = menu.ItemOperations(selectedItem);
+            OperationList.DisplayMemberPath = "Title";
         }
     }
 }
