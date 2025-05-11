@@ -16,67 +16,17 @@ namespace ProtosInterface
     {
         private static MenuItem elementToCopy;
         private AppDbContext _context;
+        private dbDataLoader loader;
         int productId;
 
         public MenuItem createMenu()
         {
-            MenuItem root = new MenuItem() { Title = getProductName(productId) };
-            if (isHasChildren(productId))
+            MenuItem root = new MenuItem() { Title = loader.getProductName(productId) };
+            if (loader.isHasChildren(productId))
             {
-                buildMenuItems(productId, ref root);
+                loader.buildMenuItems(productId, ref root);
             }
             return root;
-        }
-
-        private void buildMenuItems(int productId, ref MenuItem item)
-        {
-            IQueryable products = _context.ProductLinks.Where(p => p.ParentProductId == productId);
-            var productIdList = sqlToDictionary(products);
-            foreach (KeyValuePair<int, double> id in productIdList)
-            {
-                //for (int i = 0; i < id.Value; i++)
-                //{
-                    MenuItem doughterItem = new MenuItem() { Title = $"{getProductName(id.Key)}" };
-                    doughterItem.Parent = item;
-                    doughterItem.itemId = id.Key;
-                    item.Items.Add(doughterItem);
-                    if (isHasChildren(id.Key))
-                    {
-                        buildMenuItems(id.Key, ref doughterItem);
-                    }
-                //}
-            }
-        }
-
-        private bool isHasChildren(int productId)
-        {
-            var childs = _context.ProductLinks.Where(p => p.ParentProductId == productId);
-            if (childs.Count() > 0)
-            {
-                return true;
-            }
-            return false;
-        }
-
-        private string getProductName(int productId)
-        {
-            var product = _context.Products.Find(productId);
-            if (product == null)
-            {
-                return "undefined";
-            }
-            string name = product.Name;
-            return name;
-        }
-
-        private Dictionary<int, double> sqlToDictionary(IQueryable products)
-        {
-            Dictionary<int, double> dbRows = new Dictionary<int, double>();
-            foreach (ProductLink product in products)
-            {
-                dbRows.Add(product.IncludedProductId, product.Amount);
-            }
-            return dbRows;
         }
 
         public static void copyMenuItem(MenuItem item)
@@ -127,6 +77,7 @@ namespace ProtosInterface
         {
             this.productId = productId;
             _context = new AppDbContext();
+            loader = new dbDataLoader();
         }
     }
 }

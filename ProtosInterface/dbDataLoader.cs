@@ -44,7 +44,7 @@ namespace ProtosInterface
             return items;
         }
 
-        private void buildMenuItems(int productId, ref MenuItem item)
+        public void buildMenuItems(int productId, ref MenuItem item)
         {
             IQueryable products = _context.ProductLinks.Where(p => p.ParentProductId == productId);
             var productIdList = sqlToDictionary(products);
@@ -64,7 +64,7 @@ namespace ProtosInterface
             }
         }
 
-        private bool isHasChildren(int productId)
+        public bool isHasChildren(int productId)
         {
             var childs = _context.ProductLinks.Where(p => p.ParentProductId == productId);
             if (childs.Count() > 0)
@@ -74,7 +74,7 @@ namespace ProtosInterface
             return false;
         }
 
-        private string getProductName(int productId)
+        public string getProductName(int productId)
         {
             var product = _context.Products.Find(productId);
             if (product == null)
@@ -85,7 +85,7 @@ namespace ProtosInterface
             return name;
         }
 
-        private Dictionary<int, double> sqlToDictionary(IQueryable products)
+        public Dictionary<int, double> sqlToDictionary(IQueryable products)
         {
             Dictionary<int, double> dbRows = new Dictionary<int, double>();
             foreach (ProductLink product in products)
