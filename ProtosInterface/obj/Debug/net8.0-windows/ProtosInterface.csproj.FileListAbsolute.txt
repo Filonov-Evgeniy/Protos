@@ -309,3 +309,4 @@ C:\Users\shunk\OneDrive\Документы\GitHub\Protos\ProtosInterface\obj\Deb
 C:\Users\shunk\OneDrive\Документы\GitHub\Protos\ProtosInterface\obj\Debug\net8.0-windows\ProtosIn.A97C8CA2.Up2Date
 C:\Users\shunk\OneDrive\Документы\GitHub\Protos\ProtosInterface\obj\Debug\net8.0-windows\ProtosInterface.genruntimeconfig.cache
 C:\Users\shunk\OneDrive\Документы\GitHub\Protos\ProtosInterface\obj\Debug\net8.0-windows\ref\ProtosInterface.dll
+D:\Protos\ProtosInterface\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
