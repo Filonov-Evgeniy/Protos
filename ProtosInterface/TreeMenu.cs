@@ -21,7 +21,11 @@ namespace ProtosInterface
 
         public MenuItem createMenu()
         {
-            MenuItem root = new MenuItem() { Title = loader.getProductName(productId) };
+            MenuItem root = new MenuItem() 
+            { 
+                Title = loader.getProductName(productId),
+                itemId = productId
+            };
             if (loader.isHasChildren(productId))
             {
                 loader.buildMenuItems(productId, ref root);

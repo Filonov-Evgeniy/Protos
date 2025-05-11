@@ -50,9 +50,9 @@ namespace ProtosInterface
             var productIdList = sqlToDictionary(products);
             foreach (KeyValuePair<int, double> id in productIdList)
             {
-                for (int i = 0; i < id.Value; i++)
-                {
-                    MenuItem doughterItem = new MenuItem() { Title = getProductName(id.Key) };
+                //for (int i = 0; i < id.Value; i++)
+                //{
+                    MenuItem doughterItem = new MenuItem() { Title = getProductName(id.Key), Amount = id.Value };
                     doughterItem.Parent = item;
                     doughterItem.itemId = id.Key;
                     item.Items.Add(doughterItem);
@@ -60,7 +60,7 @@ namespace ProtosInterface
                     {
                         buildMenuItems(id.Key, ref doughterItem);
                     }
-                }
+                //}
             }
         }
 
