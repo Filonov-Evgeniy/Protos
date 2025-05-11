@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using ProtosInterface.Models;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -28,6 +30,38 @@ public partial class MainWindow : Window
         TreeMenu menu = new TreeMenu(11);
         MenuItem item = menu.createMenu();
         return item;
+    }
+
+    private void SaveEdition_Click(object sender, RoutedEventArgs e)
+    {
+        AppDbContext _context = new AppDbContext();
+        MenuItem item = new MenuItem();
+        foreach (MenuItem menuItem in trvMenu.Items)
+        {
+            item = menuItem;
+        }
+        _context.ProductLinks
+            .Where(p => p.ParentProductId == item.itemId)
+            .ExecuteDelete();
+        List<ProductLink> links = new List<ProductLink>();
+        foreach (MenuItem product in item.Items)
+        {
+            Product productParent = _context.Products.Find(item.itemId);
+            Product includedProduct = _context.Products.Find(product.itemId);
+            links.Add(new ProductLink
+            {
+                ParentProductId = item.itemId,
+                ParentProduct = productParent,
+
+                IncludedProductId = product.itemId,
+                IncludedProduct = includedProduct,
+
+                Amount = product.Amount
+            });
+        }
+        _context.ProductLinks.AddRange(links);
+        _context.SaveChanges();
+        MessageBox.Show("Сохранение завершено!");
     }
 
     private void CopyTreeItemButton_Click(object sender, RoutedEventArgs e)

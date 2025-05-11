@@ -29,6 +29,7 @@ namespace ProtosInterface
         }
 
         public string Title { get; set; }
+        public double Amount { get; set; }
         [JsonIgnore]
         public MenuItem Parent { get; set; }
 
@@ -36,7 +37,7 @@ namespace ProtosInterface
 
         public object Clone()
         {
-            var item = new MenuItem(itemName, itemId, DeepCopy(productComponentDictionary), Title, DeepCopy(Items));
+            var item = new MenuItem(itemName, itemId, DeepCopy(productComponentDictionary), Title, DeepCopy(Items), Amount);
             changeParent(item);
             return item;
         }
@@ -56,13 +57,14 @@ namespace ProtosInterface
             }
         }
 
-        public MenuItem(string itemName, int itemId, Dictionary<string, int> productComponentDictionary, string Title, ObservableCollection<MenuItem> Items)
+        public MenuItem(string itemName, int itemId, Dictionary<string, int> productComponentDictionary, string Title, ObservableCollection<MenuItem> Items, double amount)
         {
             this.itemName = itemName;
             this.itemId = itemId;
             this.productComponentDictionary = productComponentDictionary;
             this.Title = Title;
             this.Items = Items;
+            this.Amount = amount;
         }
 
         Dictionary<TKey, TValue> DeepCopy<TKey, TValue>(Dictionary<TKey, TValue> original)
