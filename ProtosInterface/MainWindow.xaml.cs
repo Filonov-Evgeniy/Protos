@@ -96,19 +96,19 @@ public partial class MainWindow : Window
 
     private void SearchText_Changed(object sender, TextChangedEventArgs e)
     {
-        TextBox search = sender as TextBox;
-        if (search.Text.Length > 2 && !search.Text.Contains("Поиск"))
-        {
-            try
-            {
-                var root = trvMenu.Items[0] as MenuItem;
+        //TextBox search = sender as TextBox;
+        //if (search.Text.Length > 2 && !search.Text.Contains("Поиск"))
+        //{
+        //    try
+        //    {
+        //        var root = trvMenu.Items[0] as MenuItem;
 
-                string text = TreeMenu.MenuItemSearch(root, search.Text, "");
+        //        string text = TreeMenu.MenuItemSearch(root, search.Text, "", "");
 
-                MessageBox.Show(text);
-            }
-            catch { }
-        }
+        //        MessageBox.Show(text);
+        //    }
+        //    catch { }
+        //}
     }
 
     private void trvMenu_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
@@ -188,12 +188,25 @@ public partial class MainWindow : Window
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-        TreeViewItem nextItem = GetNextTreeViewItem();
+        //TreeViewItem nextItem = GetNextTreeViewItem();
 
-        if (nextItem != null)
+        //if (nextItem != null)
+        //{
+        //    nextItem.IsSelected = true;
+        //    nextItem.Focus();
+        //}
+        TextBox search = SearchTreeItem;
+        if (search.Text.Length > 2 && !search.Text.Contains("Поиск"))
         {
-            nextItem.IsSelected = true;
-            nextItem.Focus();
+            try
+            {
+                var root = trvMenu.Items[0] as MenuItem;
+
+                string text = TreeMenu.MenuItemSearch(root, search.Text, "", "");
+
+                MessageBox.Show(text);
+            }
+            catch { }
         }
     }
 

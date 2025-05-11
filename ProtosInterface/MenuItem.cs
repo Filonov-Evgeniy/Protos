@@ -6,10 +6,11 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace ProtosInterface
 {
-    public class MenuItem: ICloneable
+    public class MenuItem : ICloneable
     {
         public string itemName;
         public int itemId;

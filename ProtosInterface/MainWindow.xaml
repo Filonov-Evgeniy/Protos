@@ -79,7 +79,7 @@
                 <ListBox x:Name="OperationList" Margin="5,5,5,5" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
             </Border>
             <Border Grid.Row="1" Margin="5,5,5,5">
-                <Button Click="Button_Click"/>
+                <Button Click="Button_Click" Content="Поиск"/>
             </Border>
         </Grid>
     </Grid>

@@ -97,15 +97,26 @@ namespace ProtosInterface
 
         }
 
-        public static string MenuItemSearch(MenuItem root, string search, string result)
+        public static string MenuItemSearch(MenuItem root, string search, string currentPath, string result)
         {
+            currentPath += root.Title + " -> ";
+
             foreach (var item in root.Items)
             {
-                if (item.Title.ToString().ToLower().Contains(search.ToLower()))
-                    result += item.Title.ToString() + "\n";
+                string path = currentPath;
+
+                if (item.Title.ToLower().Contains(search.ToLower()))
+                {
+                    path += item.Title + "\n";
+                    result += path;
+                }
+
                 if (item.Items.Count > 0)
-                    result = MenuItemSearch(item, search, result);
+                {
+                    result = MenuItemSearch(item, search, path, result);
+                }
             }
+
             return result;
         }
 
