@@ -130,8 +130,66 @@ public partial class MainWindow : Window
 
     private void SearchText_Changed(object sender, TextChangedEventArgs e)
     {
-        TextBox search = sender as TextBox;
-        if (search.Text.Length > 2)
+        //TextBox search = sender as TextBox;
+        //if (search.Text.Length > 2)
+        //{
+        //    try
+        //    {
+        //        var root = trvMenu.Items[0] as MenuItem;
+
+        //        string text = TreeMenu.MenuItemSearch(root, search.Text, "");
+
+        //        MessageBox.Show(text);
+        //    }
+        //    catch { }
+        //}
+    }
+
+    private TreeViewItem GetNextTreeViewItem(TreeViewItem item)
+    {
+        TreeViewItem nextItem = null;
+        item.IsExpanded = true;
+        item.UpdateLayout();
+
+        if (item != null)
+        {
+            if (item.Items.Count > 0)
+            {
+                nextItem = (TreeViewItem)trvMenu.ItemContainerGenerator.ContainerFromIndex(0);
+            }
+            else
+            {
+                TreeViewItem parentItem = GetParentTreeViewItem(item);
+                if (parentItem != null)
+                {
+                    int index = parentItem.ItemContainerGenerator.IndexFromContainer(item);
+                    if (index < parentItem.Items.Count - 1)
+                    {
+                        nextItem = (TreeViewItem)parentItem.ItemContainerGenerator.ContainerFromIndex(index + 1);
+                    }
+                }
+            }
+        }
+
+        return nextItem;
+    }
+
+    private TreeViewItem GetParentTreeViewItem(TreeViewItem item)
+    {
+        return item?.Parent as TreeViewItem;
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        //TreeViewItem nextItem = GetNextTreeViewItem();
+
+        //if (nextItem != null)
+        //{
+        //    nextItem.IsSelected = true;
+        //    nextItem.Focus();
+        //}
+        TextBox search = SearchTreeItem;
+        if (search.Text.Length > 0 && !search.Text.Contains("Поиск"))
         {
             try
             {
