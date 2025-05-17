@@ -195,7 +195,7 @@ public partial class MainWindow : Window
             {
                 var root = trvMenu.Items[0] as MenuItem;
 
-                string text = TreeMenu.MenuItemSearch(root, search.Text, "");
+                string text = TreeMenu.MenuItemSearch(root, search.Text, "", "");
 
                 MessageBox.Show(text);
             }
@@ -210,7 +210,10 @@ public partial class MainWindow : Window
             OperationList.Items.Clear();
             TreeMenu menu = new TreeMenu(11);
             var selectedItem = trvMenu.SelectedItem as MenuItem;
-            OperationList.Items.Add(menu.ItemOperations(selectedItem));
+            foreach (var item in menu.ItemOperations(selectedItem))
+            {
+                OperationList.Items.Add(item);
+            }
         }
     }
 }

@@ -51,27 +51,38 @@ namespace ProtosInterface
 
         }
 
-        public static string MenuItemSearch(MenuItem root, string search, string result)
+        public static string MenuItemSearch(MenuItem root, string search, string currentPath, string result)
         {
+            currentPath += root.Title + " -> ";
+
             foreach (var item in root.Items)
             {
-                if (item.Title.ToString().ToLower().Contains(search.ToLower()))
-                    result += item.Title.ToString() + "\n";
+                string path = currentPath;
+
+                if (item.Title.ToLower().Contains(search.ToLower()))
+                {
+                    path += item.Title + "\n";
+                    result += path;
+                }
+
                 if (item.Items.Count > 0)
-                    result = MenuItemSearch(item, search, result);
+                {
+                    result = MenuItemSearch(item, search, path, result);
+                }
             }
+
             return result;
         }
 
-        public string ItemOperations(MenuItem item)
+        public List<string> ItemOperations(MenuItem item)
         {
-            string result = "";
+            List<string> result = new List<string>();
             IQueryable operations = _context.Operations.Include(o => o.OperationType).Where(o => o.ProductId == item.itemId);
             foreach (Operation operation in operations)
             {
                 if (operation.OperationType != null)
                 {
-                    result += operation.OperationType.Name + "\n";
+                    result.Add(operation.OperationType.Name);
                 }
             }
             return result;

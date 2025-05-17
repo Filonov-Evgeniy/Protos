@@ -34,8 +34,8 @@
             <Grid Grid.Column="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0.7*"/>
-                    <RowDefinition Height="6.3*"/>
-                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="3.3*"/>
                 </Grid.RowDefinitions>
                 <ToolBar Width="25" HorizontalAlignment="Left" Margin="5, 0, 0, 0">
                     <Button x:Name="SaveEdition" Click="SaveEdition_Click"  Content="Сохранить изменения"></Button>
@@ -47,8 +47,7 @@
                             <HierarchicalDataTemplate DataType="{x:Type MenuItem}" ItemsSource="{Binding Items}">
                                 <TextBlock Style="{StaticResource ScaledTextBlockStyle}">
                                     <Run Text="{Binding Title}"/>
-                                    <Run Text=" - "/>
-                                    <Run Text="{Binding Amount}"/>
+
                                 </TextBlock>
                             </HierarchicalDataTemplate>
                         </TreeView.ItemTemplate>
@@ -62,19 +61,21 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
                                 <ColumnDefinition Width="9*"/>
+                                <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
-                            <Image x:Name="SearchPic" Source="Resources/Lupa.png" Grid.Column="0"/>
-                            <TextBox x:Name="SearchTreeItem" Text="Поиск" Foreground="Gray" GotFocus="SearchText_GotFocus" LostFocus="SearchText_LostFocus" TextChanged="SearchText_Changed" Grid.Column="1"/>
+                            <Image x:Name="SearchPic" Source="Resources/Lupa.png" Grid.Column="1"/>
+                            <TextBox x:Name="SearchTreeItem" Text="Поиск" Foreground="Gray" GotFocus="SearchText_GotFocus" LostFocus="SearchText_LostFocus" TextChanged="SearchText_Changed" Grid.Column="0"/>
                         </Grid>
-                        <Button x:Name="CopyTreeItemButton" Content="Копировать" Click="CopyTreeItemButton_Click" Grid.Row="1"/>
-                        <Button x:Name="InsertTreeItemButton" Content="Вставить" Click="InsertTreeItemButton_Click" Grid.Row="2"/>
-                        <Button x:Name="AddNewTreeItemButton" Content="Добавить элемент" Click="AddNewTreeItemButton_Click" Grid.Row="3"/>
-                        <Button x:Name="DeleteTreeItemButton" Content="Удалить элемент" Click="DeleteTreeItemButton_Click" Grid.Row="4"/>
+                        <Button x:Name="CopyTreeItemButton" Content="Копировать" Click="CopyTreeItemButton_Click" Grid.Row="2"/>
+                        <Button x:Name="InsertTreeItemButton" Content="Вставить" Click="InsertTreeItemButton_Click" Grid.Row="3"/>
+                        <Button x:Name="AddNewTreeItemButton" Content="Добавить элемент" Click="AddNewTreeItemButton_Click" Grid.Row="4"/>
+                        <Button x:Name="DeleteTreeItemButton" Content="Удалить элемент" Click="DeleteTreeItemButton_Click" Grid.Row="5"/>
+                        <Button Click="Button_Click" Content="Поиск" Grid.Row="1"/>
                     </Grid>
                 </Border>
             </Grid>
@@ -85,7 +86,9 @@
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <Border Grid.Row="0" Margin="5,5,5,5">
-                <ListBox x:Name="OperationList" Margin="5,5,5,5"/>
+                <ListBox x:Name="OperationList" Margin="5,5,5,5" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
+            </Border>
+            <Border Grid.Row="1" Margin="5,5,5,5">
             </Border>
         </Grid>
     </Grid>

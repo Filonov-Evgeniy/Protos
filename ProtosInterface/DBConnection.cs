@@ -9,7 +9,7 @@ namespace ProtosInterface
 {
     class DBConnection
     {
-        private readonly SqlConnection sql = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TestDB;Integrated Security=True;");
+        private readonly SqlConnection sql = new SqlConnection(@"Data Source=KAYSER\MSSQLSERV;Initial Catalog=TestDB;Integrated Security=True;");
 
         public void OpenConn()
         {
