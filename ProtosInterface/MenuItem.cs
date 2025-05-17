@@ -28,7 +28,17 @@ namespace ProtosInterface
             this.Items = new ObservableCollection<MenuItem>();
         }
 
-        public string Title { get; set; }
+        public string Title
+        {
+            get { return itemName; }
+            set { itemName = value; }
+        }
+
+        public int Id
+        {
+            get { return itemId; }
+            set { itemId = value; }
+        }
         public double Amount { get; set; }
         [JsonIgnore]
         public MenuItem Parent { get; set; }

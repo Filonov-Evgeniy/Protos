@@ -41,6 +41,7 @@
                     <Button x:Name="SaveEdition" Click="SaveEdition_Click"  Content="Сохранить изменения"></Button>
                     <Button x:Name="SaveAsNewItem" Content="Сохранить как новый объект"></Button>
                 </ToolBar>
+                <ComboBox x:Name="productsComboBox" HorizontalAlignment="Right" Width="200" SelectionChanged="productsComboBox_SelectionChanged"/>
                 <Border Grid.Row="1" Margin="5,5,5,5">
                     <TreeView Name="trvMenu" SelectedItemChanged="trvMenu_SelectedItemChanged">
                         <TreeView.ItemTemplate>

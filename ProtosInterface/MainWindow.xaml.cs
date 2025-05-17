@@ -19,15 +19,20 @@ namespace ProtosInterface;
 public partial class MainWindow : Window
 {
     List<MenuItem> itemsToAdd = new List<MenuItem>();
+    List<MenuItem> productsList = new List<MenuItem>();
+    dbDataLoader dbLoader = new dbDataLoader();
     public MainWindow()
     {
         InitializeComponent();
-        trvMenu.Items.Add(Menu_Create());
+        productsList = dbLoader.getProductData();
+        productsComboBox.ItemsSource = productsList;
+        productsComboBox.DisplayMemberPath = "Title";
+        productsComboBox.SelectedIndex = 0;
     }
 
-    static public MenuItem Menu_Create()
+    static public MenuItem Menu_Create(int id)
     {
-        TreeMenu menu = new TreeMenu(11);
+        TreeMenu menu = new TreeMenu(id);
         MenuItem item = menu.createMenu();
         return item;
     }
@@ -215,5 +220,12 @@ public partial class MainWindow : Window
                 OperationList.Items.Add(item);
             }
         }
+    }
+
+    private void productsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        MenuItem item = productsComboBox.SelectedItem as MenuItem;
+        trvMenu.Items.Clear();
+        trvMenu.Items.Add(Menu_Create(item.Id));
     }
 }
