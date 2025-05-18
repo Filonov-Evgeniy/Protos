@@ -77,12 +77,26 @@ public partial class MainWindow : Window
 
     private void InsertTreeItemButton_Click(object sender, RoutedEventArgs e)
     {
-        var selectedItem = trvMenu.SelectedItem as MenuItem;
-        var insertedItem = TreeMenu.InsertMenuItem();
-        if (insertedItem != null)
+        var selectedItem = trvMenu.Items[0] as MenuItem;
+        if (selectedItem != null)
         {
-            insertedItem.Parent = selectedItem;
-            selectedItem.Items.Add(insertedItem);
+            var insertedItem = TreeMenu.InsertMenuItem();
+            if (insertedItem.Id == selectedItem.Id)
+            {
+                MessageBox.Show("Нельзя копировать элемент в себя");
+            }
+            else
+            {
+                if (insertedItem != null)
+                {
+                    insertedItem.Parent = selectedItem;
+                    selectedItem.Items.Add(insertedItem);
+                }
+            }
+        }
+        else
+        {
+            MessageBox.Show("Выберите элемент для вставки");
         }
     }
 
