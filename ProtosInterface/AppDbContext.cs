@@ -13,8 +13,12 @@ namespace ProtosInterface
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductLink> ProductLinks { get; set; }
-        public DbSet<Operation_Type> OperationTypes { get; set; }
+        public DbSet<OperationType> OperationTypes { get; set; }
         public DbSet<Operation> Operations { get; set; }
+        public DbSet<OperationVariant> OperationVariants { get; set; }
+        public DbSet<Equipment> Equipment { get; set; }
+        public DbSet<OperationVariantComponent> OperationVariantComponents { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -63,7 +67,7 @@ namespace ProtosInterface
                       .HasColumnName("amount");
             });
 
-            modelBuilder.Entity<Operation_Type>(entity =>
+            modelBuilder.Entity<OperationType>(entity =>
             {
                 entity.ToTable("Operation_Type");
                 entity.HasKey(ot => ot.Id);
@@ -107,6 +111,102 @@ namespace ProtosInterface
                 entity.HasOne(o => o.OperationType)
                       .WithMany()
                       .HasForeignKey(o => o.TypeId);
+            });
+            modelBuilder.Entity<OperationVariant>(entity =>
+            {
+                entity.ToTable("Operation_Variant");
+                entity.HasKey(ov => ov.Id);
+
+                entity.Property(ov => ov.Id)
+                      .HasColumnName("id");
+
+                entity.Property(ov => ov.OperationId)
+                      .IsRequired()
+                      .HasColumnName("operation_id");
+
+                entity.Property(ov => ov.Duration)
+                      .IsRequired()
+                      .HasColumnName("duration");
+
+                entity.Property(ov => ov.Description)
+                      .HasColumnType("VARCHAR(MAX)")
+                      .HasColumnName("description");
+
+                entity.HasOne(ov => ov.Operation)
+                      .WithMany()
+                      .HasForeignKey(ov => ov.OperationId);
+            });
+            modelBuilder.Entity<Equipment>(entity =>
+            {
+                entity.ToTable("Equipment");
+                entity.HasKey(e => e.Id);
+
+                entity.Property(e => e.Id)
+                      .HasColumnName("id");
+
+                entity.Property(e => e.InventoryNumber)
+                      .IsRequired()
+                      .HasColumnName("inventory_number");
+
+                entity.Property(e => e.Name)
+                      .IsRequired()
+                      .HasMaxLength(10)
+                      .HasColumnName("name");
+
+                entity.Property(e => e.AreaId)
+                      .IsRequired()
+                      .HasMaxLength(30)
+                      .HasColumnName("area_id");
+
+                entity.Property(e => e.TypeId)
+                      .IsRequired()
+                      .HasColumnName("type_id");
+
+                entity.Property(e => e.LoadFactor)
+                      .IsRequired()
+                      .HasColumnName("load_factor");
+
+                entity.Property(e => e.Description)
+                      .HasColumnType("VARCHAR(MAX)")
+                      .HasColumnName("description");
+
+                entity.Property(e => e.ShortName)
+                      .HasMaxLength(10)
+                      .HasColumnName("short_name");
+
+                //entity.HasOne(e => e.Equipment_Type)
+                //      .WithMany()
+                //      .HasForeignKey(e => e.TypeId);
+            });
+            modelBuilder.Entity<OperationVariantComponent>(entity =>
+            {
+                entity.ToTable("Operation_Variant_Component");
+                entity.HasKey(ovc => ovc.Id);
+
+                entity.Property(ovc => ovc.Id)
+                      .HasColumnName("id");
+
+                entity.Property(ovc => ovc.OperationVariantId)
+                      .IsRequired()
+                      .HasColumnName("operation_variant_id");
+
+                entity.Property(ovc => ovc.EquipmentId)
+                      .IsRequired()
+                      .HasColumnName("equipment_id");
+
+                entity.Property(ovc => ovc.ProfessionId)
+                      .HasColumnName("profession_id");
+
+                entity.Property(ovc => ovc.WorkersAmount)
+                      .HasColumnName("workers_amount");
+
+                entity.HasOne(ovc => ovc.OperationVariant)
+                      .WithMany()
+                      .HasForeignKey(ovc => ovc.OperationVariantId);
+
+                entity.HasOne(ovc => ovc.Equipment)
+                      .WithMany()
+                      .HasForeignKey(ovc => ovc.EquipmentId);
             });
         }
 

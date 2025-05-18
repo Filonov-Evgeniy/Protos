@@ -21,6 +21,7 @@ public partial class MainWindow : Window
     List<MenuItem> itemsToAdd = new List<MenuItem>();
     List<MenuItem> productsList = new List<MenuItem>();
     dbDataLoader dbLoader = new dbDataLoader();
+    int itemid = -1;
     public MainWindow()
     {
         InitializeComponent();
@@ -227,9 +228,9 @@ public partial class MainWindow : Window
         if (trvMenu.SelectedItem != null)
         {
             OperationList.Items.Clear();
-            TreeMenu menu = new TreeMenu(11);
+            ListFill list = new ListFill();
             var selectedItem = trvMenu.SelectedItem as MenuItem;
-            foreach (var item in menu.ItemOperations(selectedItem))
+            foreach (var item in list.ItemOperations(selectedItem))
             {
                 OperationList.Items.Add(item);
             }
@@ -241,5 +242,17 @@ public partial class MainWindow : Window
         MenuItem item = productsComboBox.SelectedItem as MenuItem;
         trvMenu.Items.Clear();
         trvMenu.Items.Add(Menu_Create(item.Id));
+        FullName.Text = ((MenuItem)productsComboBox.SelectedItem).Title.ToString() + " полное название";
+        itemid = item.Id;
+    }
+
+    private void OperationList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if(OperationList.SelectedItem != null)
+        {
+            EquipmentList.Items.Clear();
+            var selectedItem = OperationList.SelectedItem as MenuItem;
+            //foreach (var item in )
+        }
     }
 }

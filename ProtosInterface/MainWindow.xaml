@@ -83,13 +83,18 @@
         </Border>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="4.5*"/>
+                <RowDefinition Height="4.5*"/>
             </Grid.RowDefinitions>
             <Border Grid.Row="0" Margin="5,5,5,5">
-                <ListBox x:Name="OperationList" Margin="5,5,5,5" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
+                <TextBox x:Name="FullName" IsEnabled="False"/>
             </Border>
             <Border Grid.Row="1" Margin="5,5,5,5">
+                <ListBox x:Name="OperationList" Margin="5,5,5,5" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" SelectionChanged="OperationList_SelectionChanged"/>
+            </Border>
+            <Border Grid.Row="2" Margin="5,5,5,5">
+                <ListBox x:Name="EquipmentList" Margin="5,5,5,5" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
             </Border>
         </Grid>
     </Grid>

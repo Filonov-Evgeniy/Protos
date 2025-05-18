@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ProtosInterface
@@ -35,7 +36,8 @@ namespace ProtosInterface
 
         public static void copyMenuItem(MenuItem item)
         {
-            elementToCopy = (MenuItem)item.Clone();
+            if (item != null)
+                elementToCopy = (MenuItem)item.Clone();
         }
 
         public static MenuItem InsertMenuItem()
@@ -54,7 +56,7 @@ namespace ProtosInterface
         public static string MenuItemSearch(MenuItem root, string search, string currentPath, string result)
         {
             currentPath += root.Title + " -> ";
-
+           
             foreach (var item in root.Items)
             {
                 string path = currentPath;
@@ -71,20 +73,6 @@ namespace ProtosInterface
                 }
             }
 
-            return result;
-        }
-
-        public List<string> ItemOperations(MenuItem item)
-        {
-            List<string> result = new List<string>();
-            IQueryable operations = _context.Operations.Include(o => o.OperationType).Where(o => o.ProductId == item.itemId);
-            foreach (Operation operation in operations)
-            {
-                if (operation.OperationType != null)
-                {
-                    result.Add(operation.OperationType.Name);
-                }
-            }
             return result;
         }
 
