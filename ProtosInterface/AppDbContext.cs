@@ -114,7 +114,7 @@ namespace ProtosInterface
         {
             DBConnection connect = new DBConnection();
             optionsBuilder.UseSqlServer(connect.ConnectionString);
-            //optionsBuilder.UseSqlServer(@"Data Source=KAYSER\MSSQLSERV;Initial Catalog=TestDB;Integrated Security=True;TrustServerCertificate=true;");
+            
         }
     }
 }
