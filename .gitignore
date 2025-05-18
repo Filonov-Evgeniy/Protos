@@ -2,9 +2,10 @@
 # Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
 ################################################################################
 
-bin/
-obj/
-.vs/
+ProtosInterface/bin/
+ProtosInterface/obj/
+ProtosInterface/.vs/
+ProtosInterface/DBConnection.cs
 *.user
 *.suo
 *.cache
