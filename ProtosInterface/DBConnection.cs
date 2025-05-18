@@ -9,22 +9,11 @@ namespace ProtosInterface
 {
     class DBConnection
     {
-        private readonly SqlConnection sql = new SqlConnection(@"Data Source=KAYSER\MSSQLSERV;Initial Catalog=TestDB;Integrated Security=True;");
+        private readonly string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TestDB;Integrated Security=True;";
 
-        public void OpenConn()
+        public string ConnectionString
         {
-            if (sql.State == System.Data.ConnectionState.Closed)
-                sql.Open();
-        }
-        public void CloseConn()
-        {
-            if (sql.State == System.Data.ConnectionState.Open)
-                sql.Close();
-        }
-
-        public SqlConnection GetConn()
-        {
-            return sql;
+            get { return connectionString; }
         }
     }
 }
