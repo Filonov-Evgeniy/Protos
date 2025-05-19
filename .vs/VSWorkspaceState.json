@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProtosInterface"
+    "\\ProtosInterface",
+    "\\ProtosInterface\\Models"
   ],
-  "SelectedNode": "\\ProtosInterface\\ProtosInterface.sln",
+  "SelectedNode": "\\ProtosInterface\\Models\\Operation.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -12,20 +12,62 @@ namespace ProtosInterface
     {
         private dbDataLoader loader;
         private AppDbContext _context;
-        public List<string> ItemOperations(MenuItem item)
+        public List<MenuItem> ItemOperations(MenuItem item)
         {
-            List<string> result = new List<string>();
+            List<MenuItem> result = new List<MenuItem>();
             IQueryable operations = _context.Operations.Include(o => o.OperationType).Where(o => o.ProductId == item.itemId);
             foreach (Operation operation in operations)
             {
                 if (operation.OperationType != null)
                 {
                     if (operation.Code < 10)
-                        result.Add("0" + operation.Code + " | " + operation.OperationType.Name);
+                        result.Add(new MenuItem { Title = "0" + operation.Code + " | " + operation.OperationType.Name, Id = operation.Id });
                     else
-                        result.Add(operation.Code + " | " + operation.OperationType.Name);
+                        result.Add(new MenuItem { Title = operation.Code + " | " + operation.OperationType.Name, Id = operation.Id });
                 }
             }
+            return result;
+        }
+
+        public List<MenuItem> OperationEqupment(int opId)
+        {
+            List<MenuItem> result = new List<MenuItem>();
+            //IQueryable operation = _context.OperationVariants.Include(ov => ov.Operation).Where(ov => ov.OperationId == opId);
+            //IQueryable equipment = _context.OperationVariantComponents.Include(ovc => ovc.OperationVariant).Where(ovc => ovc.OperationVariantId == );
+            //IQueryable<OperationVariant> operationVariants = _context.OperationVariants
+            //    .Include(ov => ov.Operation)
+            //    .Where(ov => ov.OperationId == opId);
+
+            //IQueryable<OperationVariantComponent> equipmentVariant = _context.OperationVariantComponents
+            //    .Include(ovc => ovc.OperationVariant)
+            //    .Where(ovc => operationVariants.Select(ov => ov.Id).Contains(ovc.OperationVariantId));
+
+            //IQueryable<Equipment> equipment = _context.Equipment
+            //    .Select(e => e.Name);
+
+
+            //пока самое рабочее осталось сделать саму выборку
+
+            //IQueryable equipments = _context.Equipment
+            //    .Include(e => e.) // подгрузка связанных данных
+            //    .Where(e => _context.OperationVariantComponents
+            //        .Where(ovc => _context.OperationVariants
+            //            .Where(ov => ov.OperationId == opId)
+            //            .Select(ov => ov.Id)
+            //            .Contains(ovc.OperationVariantId))
+            //        .Select(ovc => ovc.EquipmentId)
+            //        .Contains(e.Id))
+            //    .ToList();
+            //foreach (Operation operation in equipments)
+            //{
+            //    //if (operation.OperationType != null)
+            //    //{
+            //    //    if (operation.Code < 10)
+            //    //        result.Add("0" + operation.Code + " | " + operation.OperationType.Name);
+            //    //    else
+            //    //        result.Add(operation.Code + " | " + operation.OperationType.Name);
+            //    //}
+            //}
             return result;
         }
 

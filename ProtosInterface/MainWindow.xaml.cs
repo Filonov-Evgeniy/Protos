@@ -227,13 +227,11 @@ public partial class MainWindow : Window
     {
         if (trvMenu.SelectedItem != null)
         {
-            OperationList.Items.Clear();
+            OperationList.ItemsSource = null;
             ListFill list = new ListFill();
             var selectedItem = trvMenu.SelectedItem as MenuItem;
-            foreach (var item in list.ItemOperations(selectedItem))
-            {
-                OperationList.Items.Add(item);
-            }
+            OperationList.ItemsSource = list.ItemOperations(selectedItem);
+            OperationList.DisplayMemberPath = "Title";
         }
     }
 
@@ -251,8 +249,9 @@ public partial class MainWindow : Window
         if(OperationList.SelectedItem != null)
         {
             EquipmentList.Items.Clear();
-            var selectedItem = OperationList.SelectedItem as MenuItem;
-            //foreach (var item in )
+            ListFill list = new ListFill();
+            var selectedItem = OperationList.SelectedItem;
+            //foreach (var item in list.)
         }
     }
 }
