@@ -33,15 +33,15 @@
         <Border BorderThickness="0,0,1,0">
             <Grid Grid.Column="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="0.7*"/>
-                    <RowDefinition Height="6*"/>
-                    <RowDefinition Height="3.3*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="5.5*"/>
+                    <RowDefinition Height="3.5*"/>
                 </Grid.RowDefinitions>
-                <ToolBar Width="25" HorizontalAlignment="Left" Margin="5, 0, 0, 0">
+                <ToolBar Width="25" HorizontalAlignment="Left" Margin="5,5,5,5">
                     <Button x:Name="SaveEdition" Click="SaveEdition_Click"  Content="Сохранить изменения"></Button>
                     <Button x:Name="SaveAsNewItem" Content="Сохранить как новый объект"></Button>
                 </ToolBar>
-                <ComboBox x:Name="productsComboBox" HorizontalAlignment="Right" Width="200" SelectionChanged="productsComboBox_SelectionChanged"/>
+                <ComboBox x:Name="productsComboBox" HorizontalAlignment="Right" Width="200" SelectionChanged="productsComboBox_SelectionChanged" Margin="5,5,5,5"/>
                 <Border Grid.Row="1" Margin="5,5,5,5">
                     <TreeView Name="trvMenu" SelectedItemChanged="trvMenu_SelectedItemChanged">
                         <TreeView.ItemTemplate>

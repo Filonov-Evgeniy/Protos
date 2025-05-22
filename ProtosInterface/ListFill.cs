@@ -29,7 +29,7 @@ namespace ProtosInterface
             return result;
         }
 
-        public List<MenuItem> OperationEqupment(int opId)
+        public List<MenuItem> OperationEqupment(Operation opId)
         {
             List<MenuItem> result = new List<MenuItem>();
             //IQueryable operation = _context.OperationVariants.Include(ov => ov.Operation).Where(ov => ov.OperationId == opId);
@@ -49,25 +49,36 @@ namespace ProtosInterface
             //пока самое рабочее осталось сделать саму выборку
 
             //IQueryable equipments = _context.Equipment
-            //    .Include(e => e.) // подгрузка связанных данных
+            //    .Select(e => e.Name) // подгрузка связанных данных
             //    .Where(e => _context.OperationVariantComponents
             //        .Where(ovc => _context.OperationVariants
             //            .Where(ov => ov.OperationId == opId)
             //            .Select(ov => ov.Id)
             //            .Contains(ovc.OperationVariantId))
             //        .Select(ovc => ovc.EquipmentId)
-            //        .Contains(e.Id))
-            //    .ToList();
-            //foreach (Operation operation in equipments)
-            //{
-            //    //if (operation.OperationType != null)
-            //    //{
-            //    //    if (operation.Code < 10)
-            //    //        result.Add("0" + operation.Code + " | " + operation.OperationType.Name);
-            //    //    else
-            //    //        result.Add(operation.Code + " | " + operation.OperationType.Name);
-            //    //}
-            //}
+            //        .Contains(e.Id));
+
+            var equipments = _context.OperationVariants
+                .Where(ov => ov.OperationId == opId.Id)
+                .Join(
+                    _context.OperationVariantComponents,
+                    ov => ov.Id,
+                    ovc => ovc.OperationVariantId,
+                    (ov, ovc) => new { ovc.Equipment.Name }
+                )
+                .Distinct()
+                .ToList();
+
+            foreach (var operation in equipments)
+            {
+                //if (operation.OperationType != null)
+                //{
+                //    if (operation.Code < 10)
+                //        result.Add("0" + operation.Code + " | " + operation.OperationType.Name);
+                //    else
+                //        result.Add(operation.Code + " | " + operation.OperationType.Name);
+                //}
+            }
             return result;
         }
 

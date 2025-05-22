@@ -250,8 +250,11 @@ public partial class MainWindow : Window
         {
             EquipmentList.Items.Clear();
             ListFill list = new ListFill();
-            var selectedItem = OperationList.SelectedItem;
-            //foreach (var item in list.)
+            var selectedItem = OperationList.SelectedItem as Operation;
+            foreach (var item in list.OperationEqupment(selectedItem))
+            {
+
+            }
         }
     }
 }
