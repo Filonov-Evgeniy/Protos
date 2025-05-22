@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\listfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:listfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\treemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:treemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,20 +51,12 @@
       "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\treemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:treemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\screensizetotextsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:screensizetotextsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1174F0C-DD4E-46E9-807F-CEEC79685E36}|ProtosInterface.csproj|c:\\users\\shunk\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\protos2\\protos\\protosinterface\\itemlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Equipment.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\Models\\Equipment.cs",
               "RelativeDocumentMoniker": "Models\\Equipment.cs",
@@ -98,12 +98,11 @@
               "RelativeToolTip": "Models\\Equipment.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:57:38.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T23:57:38.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "OperationVariant.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\Models\\OperationVariant.cs",
               "RelativeDocumentMoniker": "Models\\OperationVariant.cs",
@@ -111,12 +110,11 @@
               "RelativeToolTip": "Models\\OperationVariant.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:44:34.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T23:44:34.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Operation.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\Models\\Operation.cs",
               "RelativeDocumentMoniker": "Models\\Operation.cs",
@@ -124,8 +122,7 @@
               "RelativeToolTip": "Models\\Operation.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:44:24.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T23:44:24.682Z"
             },
             {
               "$type": "Document",
@@ -135,14 +132,14 @@
               "RelativeDocumentMoniker": "ListFill.cs",
               "ToolTip": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\ListFill.cs",
               "RelativeToolTip": "ListFill.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T21:33:12.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "dbDataLoader.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\dbDataLoader.cs",
               "RelativeDocumentMoniker": "dbDataLoader.cs",
@@ -150,12 +147,11 @@
               "RelativeToolTip": "dbDataLoader.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowE4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:58:14.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T11:58:14.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -167,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MenuItem.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\MenuItem.cs",
               "RelativeDocumentMoniker": "MenuItem.cs",
@@ -175,12 +171,11 @@
               "RelativeToolTip": "MenuItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:03:00.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T11:03:00.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DBConnection.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\DBConnection.cs",
               "RelativeDocumentMoniker": "DBConnection.cs",
@@ -188,12 +183,11 @@
               "RelativeToolTip": "DBConnection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:06:20.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T11:06:20.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\AppDbContext.cs",
               "RelativeDocumentMoniker": "AppDbContext.cs",
@@ -201,38 +195,35 @@
               "RelativeToolTip": "AppDbContext.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAuwEMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:46:10.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T11:46:10.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "MainWindow.xaml.cs*",
-              "ViewState": "AgIAANgAAAAAAAAAAAAnwOQAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAewFMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T10:58:13.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T10:58:13.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "TreeMenu.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\TreeMenu.cs",
               "RelativeDocumentMoniker": "TreeMenu.cs",
               "ToolTip": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\TreeMenu.cs",
               "RelativeToolTip": "TreeMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAA1wBoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:04:08.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T11:04:08.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ScreenSizeToTextSize.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\ScreenSizeToTextSize.cs",
               "RelativeDocumentMoniker": "ScreenSizeToTextSize.cs",
@@ -240,12 +231,11 @@
               "RelativeToolTip": "ScreenSizeToTextSize.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:37:04.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T18:37:04.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
@@ -253,8 +243,7 @@
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:44:16.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T18:44:16.231Z"
             },
             {
               "$type": "Document",
@@ -269,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ItemList.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shunk\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\protos2\\Protos\\ProtosInterface\\ItemList.xaml.cs",
               "RelativeDocumentMoniker": "ItemList.xaml.cs",
@@ -277,8 +266,7 @@
               "RelativeToolTip": "ItemList.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:57:21.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T11:57:21.248Z"
             }
           ]
         }
