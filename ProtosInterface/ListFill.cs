@@ -29,55 +29,37 @@ namespace ProtosInterface
             return result;
         }
 
-        public List<MenuItem> OperationEqupment(Operation opId)
+        public List<MenuItem> OperationEquipment(int opId)
         {
             List<MenuItem> result = new List<MenuItem>();
-            //IQueryable operation = _context.OperationVariants.Include(ov => ov.Operation).Where(ov => ov.OperationId == opId);
-            //IQueryable equipment = _context.OperationVariantComponents.Include(ovc => ovc.OperationVariant).Where(ovc => ovc.OperationVariantId == );
-            //IQueryable<OperationVariant> operationVariants = _context.OperationVariants
-            //    .Include(ov => ov.Operation)
-            //    .Where(ov => ov.OperationId == opId);
 
-            //IQueryable<OperationVariantComponent> equipmentVariant = _context.OperationVariantComponents
-            //    .Include(ovc => ovc.OperationVariant)
-            //    .Where(ovc => operationVariants.Select(ov => ov.Id).Contains(ovc.OperationVariantId));
-
-            //IQueryable<Equipment> equipment = _context.Equipment
-            //    .Select(e => e.Name);
-
-
-            //пока самое рабочее осталось сделать саму выборку
-
-            //IQueryable equipments = _context.Equipment
-            //    .Select(e => e.Name) // подгрузка связанных данных
-            //    .Where(e => _context.OperationVariantComponents
-            //        .Where(ovc => _context.OperationVariants
-            //            .Where(ov => ov.OperationId == opId)
-            //            .Select(ov => ov.Id)
-            //            .Contains(ovc.OperationVariantId))
-            //        .Select(ovc => ovc.EquipmentId)
-            //        .Contains(e.Id));
-
-            var equipments = _context.OperationVariants
-                .Where(ov => ov.OperationId == opId.Id)
+            var equipments = _context.Equipment
                 .Join(
                     _context.OperationVariantComponents,
-                    ov => ov.Id,
-                    ovc => ovc.OperationVariantId,
-                    (ov, ovc) => new { ovc.Equipment.Name }
+                    e => e.Id,
+                    ovc => ovc.EquipmentId,
+                    (e, ovc) => new { Equipment = e, OVC = ovc }
                 )
+                .Join(
+                    _context.OperationVariants,
+                    combined => combined.OVC.OperationVariantId,
+                    ov => ov.Id,
+                    (combined, ov) => new { combined.Equipment, OV = ov }
+                )
+                .Where(x => x.OV.OperationId == opId)
+                .Select(x => new{
+                    x.Equipment.Id,
+                    x.Equipment.Name
+                })
                 .Distinct()
                 .ToList();
 
-            foreach (var operation in equipments)
+            foreach (var equipment in equipments)
             {
-                //if (operation.OperationType != null)
-                //{
-                //    if (operation.Code < 10)
-                //        result.Add("0" + operation.Code + " | " + operation.OperationType.Name);
-                //    else
-                //        result.Add(operation.Code + " | " + operation.OperationType.Name);
-                //}
+                if (equipment.Id != null)
+                {
+                    result.Add(new MenuItem { Title = equipment.Name, Id = equipment.Id });
+                }
             }
             return result;
         }

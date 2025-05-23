@@ -232,6 +232,8 @@ public partial class MainWindow : Window
             var selectedItem = trvMenu.SelectedItem as MenuItem;
             OperationList.ItemsSource = list.ItemOperations(selectedItem);
             OperationList.DisplayMemberPath = "Title";
+            EquipmentList.ItemsSource = list.OperationEquipment((OperationList.Items[0] as MenuItem).Id);
+            EquipmentList.DisplayMemberPath = "Title";
         }
     }
 
@@ -248,13 +250,12 @@ public partial class MainWindow : Window
     {
         if(OperationList.SelectedItem != null)
         {
-            EquipmentList.Items.Clear();
+            EquipmentList.ItemsSource = null;
             ListFill list = new ListFill();
-            var selectedItem = OperationList.SelectedItem as Operation;
-            foreach (var item in list.OperationEqupment(selectedItem))
-            {
-
-            }
+            var selectedItem = OperationList.SelectedItem as MenuItem;
+            EquipmentList.ItemsSource = list.OperationEquipment(selectedItem.Id);
+            EquipmentList.DisplayMemberPath = "Title";
+            
         }
     }
 }
