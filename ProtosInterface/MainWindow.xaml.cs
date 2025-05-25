@@ -228,12 +228,9 @@ public partial class MainWindow : Window
         if (trvMenu.SelectedItem != null)
         {
             OperationList.ItemsSource = null;
-            ListFill list = new ListFill();
             var selectedItem = trvMenu.SelectedItem as MenuItem;
-            OperationList.ItemsSource = list.ItemOperations(selectedItem);
-            OperationList.DisplayMemberPath = "Title";
-            EquipmentList.ItemsSource = list.OperationEquipment((OperationList.Items[0] as MenuItem).Id);
-            EquipmentList.DisplayMemberPath = "Title";
+            this.FillListItems("Operation", selectedItem.itemId);
+            this.FillListItems("Equipment", (OperationList.Items[0] as MenuItem).Id);          
         }
     }
 
@@ -244,6 +241,8 @@ public partial class MainWindow : Window
         trvMenu.Items.Add(Menu_Create(item.Id));
         FullName.Text = ((MenuItem)productsComboBox.SelectedItem).Title.ToString() + " полное название";
         itemid = item.Id;
+        this.FillListItems("Operation", (trvMenu.Items[0] as MenuItem).itemId);
+        this.FillListItems("Equipment", (OperationList.Items[0] as MenuItem).Id);
     }
 
     private void OperationList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -251,11 +250,24 @@ public partial class MainWindow : Window
         if(OperationList.SelectedItem != null)
         {
             EquipmentList.ItemsSource = null;
-            ListFill list = new ListFill();
             var selectedItem = OperationList.SelectedItem as MenuItem;
-            EquipmentList.ItemsSource = list.OperationEquipment(selectedItem.Id);
-            EquipmentList.DisplayMemberPath = "Title";
-            
+            this.FillListItems("Equipment", selectedItem.Id);            
+        }
+    }
+
+    private void FillListItems(string type, int request)
+    {
+        ListFill list = new ListFill();
+        switch (type)
+        {
+            case "Operation":
+                OperationList.ItemsSource = list.ItemOperations(request);
+                OperationList.DisplayMemberPath = "Title";
+                break;
+            case "Equipment":
+                EquipmentList.ItemsSource = list.OperationEquipment(request);
+                EquipmentList.DisplayMemberPath = "Title";
+                break;
         }
     }
 }

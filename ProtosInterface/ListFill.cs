@@ -12,10 +12,10 @@ namespace ProtosInterface
     {
         private dbDataLoader loader;
         private AppDbContext _context;
-        public List<MenuItem> ItemOperations(MenuItem item)
+        public List<MenuItem> ItemOperations(int itemId)
         {
             List<MenuItem> result = new List<MenuItem>();
-            IQueryable operations = _context.Operations.Include(o => o.OperationType).Where(o => o.ProductId == item.itemId);
+            IQueryable operations = _context.Operations.Include(o => o.OperationType).Where(o => o.ProductId == itemId);
             foreach (Operation operation in operations)
             {
                 if (operation.OperationType != null)
