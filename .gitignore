@@ -5,8 +5,8 @@
 ProtosInterface/bin/
 ProtosInterface/obj/
 ProtosInterface/.vs/
-ProtosInterface/DBConnection.cs
+
 *.user
 *.suo
 *.cache
-/ProtosInterface/DBConnection.cs
+
