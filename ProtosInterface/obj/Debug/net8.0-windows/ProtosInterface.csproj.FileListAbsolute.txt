@@ -466,3 +466,5 @@ C:\Users\shunk\OneDrive\Документы\GitHub\protos2\Protos\ProtosInterface
 C:\Users\shunk\OneDrive\Документы\GitHub\protos2\Protos\ProtosInterface\obj\Debug\net8.0-windows\ProtosInterface.pdb
 C:\Users\shunk\OneDrive\Документы\GitHub\protos2\Protos\ProtosInterface\obj\Debug\net8.0-windows\ProtosInterface.genruntimeconfig.cache
 C:\Users\shunk\OneDrive\Документы\GitHub\protos2\Protos\ProtosInterface\obj\Debug\net8.0-windows\ref\ProtosInterface.dll
+C:\Users\shunk\OneDrive\Документы\GitHub\protos2\Protos\ProtosInterface\obj\Debug\net8.0-windows\SaveWindow.baml
+C:\Users\shunk\OneDrive\Документы\GitHub\protos2\Protos\ProtosInterface\obj\Debug\net8.0-windows\SaveWindow.g.cs

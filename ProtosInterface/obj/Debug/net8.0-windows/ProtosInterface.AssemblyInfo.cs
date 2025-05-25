@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProtosInterface")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c8fafb51ade90b6f56b9ce7ebbc5b7e9621f539")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adf547f53416521e0a4492935a48caf5f000f419")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProtosInterface")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProtosInterface")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
